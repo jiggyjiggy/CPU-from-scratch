@@ -3990,4 +3990,120 @@
     <wire from="(800,460)" to="(800,800)"/>
     <wire from="(800,460)" to="(870,460)"/>
   </circuit>
+  <circuit name="SHL">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="SHL"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(190,280)" name="Constant"/>
+    <comp lib="0" loc="(190,300)" name="Constant"/>
+    <comp lib="0" loc="(190,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="i"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(420,370)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="shift_input"/>
+    </comp>
+    <comp lib="0" loc="(440,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="shift_output"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(460,360)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(490,280)" name="Constant"/>
+    <comp lib="0" loc="(490,300)" name="Constant"/>
+    <comp lib="0" loc="(750,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="8" loc="(291,261)" name="Text">
+      <a name="text" val="start"/>
+    </comp>
+    <comp lib="8" loc="(595,262)" name="Text">
+      <a name="text" val="target"/>
+    </comp>
+    <comp loc="(410,280)" name="eight_bit_register"/>
+    <comp loc="(710,280)" name="eight_bit_register"/>
+    <wire from="(410,280)" to="(420,280)"/>
+    <wire from="(420,280)" to="(420,370)"/>
+    <wire from="(440,240)" to="(440,370)"/>
+    <wire from="(440,450)" to="(440,530)"/>
+    <wire from="(460,320)" to="(460,360)"/>
+    <wire from="(460,320)" to="(490,320)"/>
+    <wire from="(710,280)" to="(750,280)"/>
+  </circuit>
+  <circuit name="SHR">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="SHR"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(190,280)" name="Constant"/>
+    <comp lib="0" loc="(190,300)" name="Constant"/>
+    <comp lib="0" loc="(190,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="i"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(420,350)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="shift_output"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,550)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="shift_input"/>
+    </comp>
+    <comp lib="0" loc="(460,360)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(490,280)" name="Constant"/>
+    <comp lib="0" loc="(490,300)" name="Constant"/>
+    <comp lib="0" loc="(750,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="8" loc="(291,261)" name="Text">
+      <a name="text" val="start"/>
+    </comp>
+    <comp lib="8" loc="(595,262)" name="Text">
+      <a name="text" val="target"/>
+    </comp>
+    <comp loc="(410,280)" name="eight_bit_register"/>
+    <comp loc="(710,280)" name="eight_bit_register"/>
+    <wire from="(410,280)" to="(420,280)"/>
+    <wire from="(420,280)" to="(420,350)"/>
+    <wire from="(440,210)" to="(440,360)"/>
+    <wire from="(440,440)" to="(440,550)"/>
+    <wire from="(460,320)" to="(460,360)"/>
+    <wire from="(460,320)" to="(490,320)"/>
+    <wire from="(710,280)" to="(750,280)"/>
+  </circuit>
 </project>
