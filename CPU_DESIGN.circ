@@ -4106,4 +4106,25 @@
     <wire from="(460,320)" to="(490,320)"/>
     <wire from="(710,280)" to="(750,280)"/>
   </circuit>
+  <circuit name="inverter">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="inverter"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(230,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(350,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(300,160)" name="NOT Gate">
+      <a name="width" val="8"/>
+    </comp>
+    <wire from="(230,160)" to="(270,160)"/>
+    <wire from="(300,160)" to="(350,160)"/>
+  </circuit>
 </project>
