@@ -14,4 +14,4 @@ NAND 게이트를 최소 단위로 하여, 여러 논리 회로를 만들었습�
 
 ---
 
-실습 내용정리 : https://jiggyjiggy.tistory.com/69
+내용정리 : https://jiggyjiggy.tistory.com/69
